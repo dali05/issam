@@ -21,7 +21,7 @@ app.get('/generate-pdf', (req, res) => {
   });
 
   // Ajoutez du texte avec des caractères spéciaux
-  doc.font('Helvetica-Bold').fontSize(12).text('ééééééééééé', 100, 100);
+  doc.text('ééééééééééé', 100, 100);
 
   // Finalisez le document
   doc.end();
